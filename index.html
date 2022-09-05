@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt" dir="ltr" >
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav-bar</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.js" ></script>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a class="active" href="#" >Home</a></li>
+            <li><a href="#" >Sobre</a></li>
+            <li><a href="#" >Blog</a></li>
+            <li><a href="#" >Contato</a></li>
+            <li><a href="#" >Feedback</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        $(document).ready(function () {
+            $("nav").click(function () { 
+                $(this).toggleClass("_expand");
+            });
+        });
+    </script>
+</body>
+</html>
